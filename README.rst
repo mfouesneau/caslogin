@@ -52,46 +52,44 @@ References
 API
 ---
 
-```python
+.. code:: python
 
-def login_to_cas_service(url, username, password, opener=None)
-    Attempt to authenticate to a CAS /login form using the provided username
-    and password. Optionally update an existing OpenerDirector.
+        def login_to_cas_service(url, username, password, opener=None)
+            Attempt to authenticate to a CAS /login form using the provided username
+            and password. Optionally update an existing OpenerDirector.
 
-    Parameters
-    ----------
+            Parameters
+            ----------
 
-    url: str
-        the location of the login form
+            url: str
+                the location of the login form
 
-    username: str or callable
-        login username
-        if a callable is provided, it must take no arguments and return a
-        string
+            username: str or callable
+                login username
+                if a callable is provided, it must take no arguments and return a
+                string
 
-    password: str or callable
-        login password associated to username
-        if a callable is provided, it must take no arguments and return a
-        string
+            password: str or callable
+                login password associated to username
+                if a callable is provided, it must take no arguments and return a
+                string
 
-    opener: OpenerDirector, Optional
-        custom opener (use this to do https certificate validation).
+            opener: OpenerDirector, Optional
+                custom opener (use this to do https certificate validation).
 
-    Returns
-    -------
-    opener: OpenerDirector, Optional
-        custom opener which will contain the authentication certificates. A
-        :class:`HTTPCookieProcessor`, will be added if it does not already
-        contain one.
+            Returns
+            -------
+            opener: OpenerDirector, Optional
+                custom opener which will contain the authentication certificates. A
+                :class:`HTTPCookieProcessor`, will be added if it does not already
+                contain one.
 
-    Raises
-    ------
-    :exc:`CASLoginError`
-        if there was a problem parsing the login form or if username or
-        password retrievel caused an exception
+            Raises
+            ------
+            :exc:`CASLoginError`
+                if there was a problem parsing the login form or if username or
+                password retrievel caused an exception
 
-    :exc:`CASLoginError`
-        if the form location or login result page could not be retrieved
-        successfully
-
-```
+            :exc:`CASLoginError`
+                if the form location or login result page could not be retrieved
+                successfully
