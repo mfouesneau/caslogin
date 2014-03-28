@@ -32,4 +32,4 @@ Contributors
 References
 ----------
 
-.. [1]: http://www.jasig.org/cas
+.. [1] http://www.jasig.org/cas
