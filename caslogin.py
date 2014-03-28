@@ -21,19 +21,31 @@ Custom Openers are also allowed. In this case, the code will check to make sure
 that the cookiejar is instanciated or will do so prior to give it the
 appropriate cookie.
 
+Example Usage
+-------------
+
+.. code:: python
+
+        from caslogin import login_to_cas_service
+        opener = login_to_cas_service('<url>/cas/login', username, password)
+
+Note that the login function accepts callables (functions) as `username` and `password`
+in case you want to save encoded informations. See API below.
+
+
 
 Contributors
 ------------
 
- * Morgan Fouesneau
- * Alex Yermolaev
- * Leigh McCuen
+* Morgan Fouesneau
+* Alex Yermolaev
+* Leigh McCuen
 
 
 References
 ----------
 
-.. [1]: http://www.jasig.org/cas
+.. [1] http://www.jasig.org/cas
 """
 
 from __future__ import print_function
