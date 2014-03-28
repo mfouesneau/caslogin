@@ -28,7 +28,7 @@ Example Usage
         from caslogin import login_to_cas_service
         opener = login_to_cas_service('<url>/cas/login', username, password)
 
-Note that the login function accepts callable/functions as username and password
+Note that the login function accepts callables (functions) as `username` and `password`
 in case you want to save encoded informations. See API below.
 
 
