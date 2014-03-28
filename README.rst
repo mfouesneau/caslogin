@@ -24,9 +24,9 @@ appropriate cookie.
 Contributors
 ------------
 
- * Morgan Fouesneau
- * Alex Yermolaev
- * Leigh McCuen
+* Morgan Fouesneau
+* Alex Yermolaev
+* Leigh McCuen
 
 
 References
